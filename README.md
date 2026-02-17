@@ -1,14 +1,13 @@
 # PalindromeCheckerApp
-Goal: Optimize palindrome checking by comparing characters directly.
-Logic:
-Convert string to a char array for index-based access.
-Apply the Two-Pointer Technique.
-Start one pointer at the beginning and one at the end, moving toward the center.
-Compare characters at each step; if they don't match, it is not a palindrome.
-Why This is Better
-Memory Efficient: Reduces extra memory usage by avoiding new string objects.
-Faster: Uses a primitive array and stops early if a mismatch is found.
-Data Structure: Uses char[] instead of String manipulation.
-Quick Commands
-Compile: javac UseCase4PalindromeCheckerApp.java.
-Run: java UseCase4PalindromeCheckerApp.
+* **Goal: Use a Stack data structure to reverse characters and validate a palindrome.
+* Logic:
+* Push: Insert each character of the string into the stack.
+* Pop & Compare: Remove characters from the stack (returns them in reverse order) and compare them to the original string.
+* Result: If all characters match, the input is a palindrome.
+* Technical Details
+* LIFO Principle: Stack follows Last In First Out, which naturally reverses the sequence.
+* Data Structure: Uses the java.util.Stack collection.
+* Operations: Leverages push() to add and pop() to retrieve/remove elements.
+* Quick Commands
+* Compile: javac UseCase5PalindromeCheckerApp.java
+* Run: java UseCase5PalindromeCheckerApp**
