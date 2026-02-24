@@ -1,17 +1,23 @@
 # PalindromeCheckerApp
-Goal: Measure and compare the execution time of different palindrome algorithms.
+This project explores various ways to check for palindromes in Java, starting from basic strings and moving into advanced data structures.
+Project Evolution (UC1 - UC13)
+Foundation: Started with a welcome message (UC1) and simple hardcoded checks (UC2).
 
-The Logic:
+Basic Logic: Used for loops to reverse strings (UC3) and optimized memory with Two-Pointers and char[] (UC4).
 
-Time Capture: Uses System.nanoTime() for high-precision timing before and after each method call.
+Linear Data Structures: Applied Stacks for LIFO logic (UC5), compared Stacks vs. Queues (UC6), and used Deques for double-ended access (UC7).
 
-Duration Calculation: Subtracts the start time from the end time to find the total nanoseconds elapsed.
+Advanced Structures: Built a Linked List checker using midpoint discovery (UC8) and implemented Recursion for a divide-and-conquer approach (UC9).
 
-Benchmarking: Compares the lightweight Array-based method against the more memory-heavy Stack-based method.
+Real-World Handling: Added Regex to ignore spaces and case sensitivity (UC10).
 
-Key Concepts
-System.nanoTime(): Provides the current value of the running Java Virtual Machine's high-resolution time source.
+Design Patterns: Refactored into an OOP Service (UC11) and implemented the Strategy Pattern to swap algorithms at runtime (UC12).
 
-Algorithm Efficiency: Demonstrates that while multiple ways lead to the same result, some are significantly faster and use less memory.
+Performance: Benchmarked all methods using System.nanoTime() to find the most efficient solution (UC13).
 
-Scalability: Testing with larger strings highlights the performance gap between iterative and object-heavy solutions.
+Technical Summary
+Author: vamsikoneru06
+
+Core Concepts: LIFO/FIFO, Recursion, Regex, Two-Pointer Technique, Strategy Design Pattern.
+
+Key Data Structures: String, char[], Stack, Queue, Deque, Linked List.
