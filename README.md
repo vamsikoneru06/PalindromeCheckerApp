@@ -1,17 +1,17 @@
 # PalindromeCheckerApp
-Goal: Move from procedural code to Object-Oriented Design via encapsulation.
+Goal: Enable the application to choose a palindrome algorithm dynamically at runtime.
 
 The Logic:
 
-Encapsulation: The validation logic is hidden inside a PalindromeService class.
+Interface: Define a PalindromeStrategy interface that all algorithms must follow.
 
-Single Responsibility: The Main class only handles app startup, while the Service class only handles validation.
+Concrete Strategies: Implement different logic (Stack, Deque, Array) in separate classes.
 
-Reusability: You can now create multiple instances of the service or use it in different parts of a larger system.
+Polymorphism: The main app interacts with the interface, not the specific class, allowing for "plug-and-play" behavior.
 
 Key Concepts
-Class & Object: Creating a template (Class) and an instance (Object) to perform tasks.
+Strategy Pattern: Defines a family of algorithms, encapsulates each one, and makes them interchangeable.
 
-Separation of Concerns: Keeping "how it works" separate from "how it's used."
+Polymorphism: Using a single interface to represent different underlying forms (algorithms).
 
-Method Exposure: Providing a public API (check()) for other classes to interact with.
+Dependency Injection: Passing the desired algorithm into the context at runtime.
