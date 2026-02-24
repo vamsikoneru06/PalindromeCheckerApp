@@ -1,14 +1,18 @@
 # PalindromeCheckerApp
-Goal: Use a Deque to compare front and rear elements for maximum efficiency.
+Goal: Validate a palindrome using a Singly Linked List structure.
 
 The Logic:
 
+Conversion: The input string is converted into a dynamic list of nodes.
 
-Deque (Double-Ended Queue): A structure allowing insertion/deletion at both ends.
+Midpoint Discovery: Uses the Fast and Slow Pointer technique to find the center of the list efficiently.
 
+In-Place Reversal: The second half of the linked list is reversed to allow for direct comparison with the first half.
 
-Comparison: Simultaneously remove the first and last characters; if they match, continue until the Deque is empty.
+Symmetric Comparison: Both halves are traversed simultaneously to check for matching characters.
 
+Technical Details
 
-Benefit: This is highly optimized as it avoids extra memory for reversals and provides direct index-free access to ends.
+Data Structure: Singly Linked List.
 
+Efficiency: Demonstrates how to handle dynamic data without the random access benefits of an array.
