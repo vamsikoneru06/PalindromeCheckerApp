@@ -15,7 +15,7 @@ import java.util.Stack;
  * - Pushes characters into a Stack (LIFO)
  * - Compares dequeue vs pop outputs
  * * If all characters match, the input is a palindrome.
- * * @author Developer
+ * * @author vamsikoneru06
  * @version 6.0
  */
 public class UseCase6PalindromeCheckerApp {

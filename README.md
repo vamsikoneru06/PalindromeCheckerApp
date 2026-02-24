@@ -1,13 +1,14 @@
 # PalindromeCheckerApp
-Goal: Demonstrate the behavioral difference between FIFO and LIFO structures.
+Goal: Use a Deque to compare front and rear elements for maximum efficiency.
 
 The Logic:
 
-Queue (FIFO): Characters are removed in the same order they were added (starts from the beginning).
 
-Stack (LIFO): Characters are removed in reverse order (starts from the end).
+Deque (Double-Ended Queue): A structure allowing insertion/deletion at both ends.
 
-Comparison: By comparing the "First-In" from the Queue with the "Last-In" from the Stack, you perform a symmetric check.
 
-Data Structures: Uses java.util.Queue (via LinkedList) and java.util.Stack.
+Comparison: Simultaneously remove the first and last characters; if they match, continue until the Deque is empty.
+
+
+Benefit: This is highly optimized as it avoids extra memory for reversals and provides direct index-free access to ends.
 
