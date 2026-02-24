@@ -1,17 +1,17 @@
 # PalindromeCheckerApp
-Goal: Enable the application to choose a palindrome algorithm dynamically at runtime.
+Goal: Measure and compare the execution time of different palindrome algorithms.
 
 The Logic:
 
-Interface: Define a PalindromeStrategy interface that all algorithms must follow.
+Time Capture: Uses System.nanoTime() for high-precision timing before and after each method call.
 
-Concrete Strategies: Implement different logic (Stack, Deque, Array) in separate classes.
+Duration Calculation: Subtracts the start time from the end time to find the total nanoseconds elapsed.
 
-Polymorphism: The main app interacts with the interface, not the specific class, allowing for "plug-and-play" behavior.
+Benchmarking: Compares the lightweight Array-based method against the more memory-heavy Stack-based method.
 
 Key Concepts
-Strategy Pattern: Defines a family of algorithms, encapsulates each one, and makes them interchangeable.
+System.nanoTime(): Provides the current value of the running Java Virtual Machine's high-resolution time source.
 
-Polymorphism: Using a single interface to represent different underlying forms (algorithms).
+Algorithm Efficiency: Demonstrates that while multiple ways lead to the same result, some are significantly faster and use less memory.
 
-Dependency Injection: Passing the desired algorithm into the context at runtime.
+Scalability: Testing with larger strings highlights the performance gap between iterative and object-heavy solutions.
