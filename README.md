@@ -1,14 +1,17 @@
 # PalindromeCheckerApp
-Goal: Check if a string is a palindrome using the power of Recursion.
+Goal: Handle sentences by ignoring spaces, punctuation, and letter casing
 
 The Logic:
+Normalization: Uses replaceAll("[^a-zA-Z0-9]", "") to remove everything except letters and numbers.
 
-Recursive Call: The method compares the characters at the current start and end positions.
+Lowercasing: Uses .toLowerCase() so that 'A' matches 'a'.
 
-Subproblem: If they match, the method calls itself with the inner substring (moving pointers inward).
+Validation: Applies the standard comparison logic to the cleaned, uniform string.
 
-Base Condition: The recursion stops when the pointers meet or cross, confirming a palindrome.
+Key Concepts
 
-Key Concept:
+Regular Expressions (Regex): Powerful patterns used to identify and replace specific characters in a string.
 
-Call Stack: This method relies on the JVM's internal stack to manage each recursive call.
+String Preprocessing: The act of cleaning data before processing it to ensure accuracy.
+
+Data Structure: Utilizes String and Arrays for processing.
