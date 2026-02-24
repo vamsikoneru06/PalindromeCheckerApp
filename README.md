@@ -1,17 +1,17 @@
 # PalindromeCheckerApp
-Goal: Handle sentences by ignoring spaces, punctuation, and letter casing
+Goal: Move from procedural code to Object-Oriented Design via encapsulation.
 
 The Logic:
-Normalization: Uses replaceAll("[^a-zA-Z0-9]", "") to remove everything except letters and numbers.
 
-Lowercasing: Uses .toLowerCase() so that 'A' matches 'a'.
+Encapsulation: The validation logic is hidden inside a PalindromeService class.
 
-Validation: Applies the standard comparison logic to the cleaned, uniform string.
+Single Responsibility: The Main class only handles app startup, while the Service class only handles validation.
+
+Reusability: You can now create multiple instances of the service or use it in different parts of a larger system.
 
 Key Concepts
+Class & Object: Creating a template (Class) and an instance (Object) to perform tasks.
 
-Regular Expressions (Regex): Powerful patterns used to identify and replace specific characters in a string.
+Separation of Concerns: Keeping "how it works" separate from "how it's used."
 
-String Preprocessing: The act of cleaning data before processing it to ensure accuracy.
-
-Data Structure: Utilizes String and Arrays for processing.
+Method Exposure: Providing a public API (check()) for other classes to interact with.
