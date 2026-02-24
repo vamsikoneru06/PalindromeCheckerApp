@@ -1,18 +1,14 @@
 # PalindromeCheckerApp
-Goal: Validate a palindrome using a Singly Linked List structure.
+Goal: Check if a string is a palindrome using the power of Recursion.
 
 The Logic:
 
-Conversion: The input string is converted into a dynamic list of nodes.
+Recursive Call: The method compares the characters at the current start and end positions.
 
-Midpoint Discovery: Uses the Fast and Slow Pointer technique to find the center of the list efficiently.
+Subproblem: If they match, the method calls itself with the inner substring (moving pointers inward).
 
-In-Place Reversal: The second half of the linked list is reversed to allow for direct comparison with the first half.
+Base Condition: The recursion stops when the pointers meet or cross, confirming a palindrome.
 
-Symmetric Comparison: Both halves are traversed simultaneously to check for matching characters.
+Key Concept:
 
-Technical Details
-
-Data Structure: Singly Linked List.
-
-Efficiency: Demonstrates how to handle dynamic data without the random access benefits of an array.
+Call Stack: This method relies on the JVM's internal stack to manage each recursive call.
